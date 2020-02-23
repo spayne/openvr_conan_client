@@ -1,5 +1,11 @@
- [requires]
-Poco/1.10.0@pocoproject/stable
+[requires]
+openvr/1.0.17@arsen-studio/stable
 
- [generators]
- cmake
+[options]
+openvr:shared=True # false
+
+[generators]
+cmake
+
+[imports]
+bin, *.dll -> ./bin # Copies all dll files from packages bin folder to my "bin" folder

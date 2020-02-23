@@ -27,3 +27,9 @@ cmake .. -G "Visual Studio 16"
 cmake --build . --config Debug
 
 
+## Using Arsen-deps
+conan install .. -s build_type=Debug --build openvr
+cmake .. -G "Visual Studio 16" 
+
+ 
+
