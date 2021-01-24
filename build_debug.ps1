@@ -23,13 +23,13 @@ if (Test-Path $build_folder)
 New-Item -ItemType "directory" $build_folder
 cd $build_folder
 
-Log "Setting up conan in $build_folder folder"
+Log "Downloading and preparing requirements (using conan install) in $build_folder folder"
 conan install .. -s build_type=Debug
 Log "Setting up cmake in $build_folder folder"
 cmake .. -G "Visual Studio 16" 
 Log "Test build in $build_folder folder"
 cmake --build . --config Debug
 
-Log "Build results:"
+Log "Build results"
 Set-Location $start_location
 dir $build_folder/bin

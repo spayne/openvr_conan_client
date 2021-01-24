@@ -3,7 +3,6 @@ Test client for OpenVR Conan recipe
 ## Background
 The OpenVR client recipe makes it easy to add OpenVR headers and libraries to a new project.
 
-The recipe itself is 
 
 ## Tested configuration
 * conan 1.22.0
